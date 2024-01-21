@@ -26,6 +26,7 @@ page_by_img = '''
 background: rgba(0,0,0,0);
 }
 
+
 </style>
 '''
 st.markdown(page_by_img, unsafe_allow_html=True)
@@ -68,13 +69,42 @@ st.write("🚀 Secure your team's spot in the chronicles of Acunetix 11.0! Time 
 st.info('To register for team event access the sidebar using the button in the top left corner') 
 st.error("Team leader i.e. YOU need not register, only register your fellow teammates")
 
-import streamlit as st
 
-import streamlit as st
+# Function to display event buttons with links
+def display_event_buttons():
+    st.subheader("Select an Event:")
+    
+    # Define event pairs for mobile display
+    event_pairs = [
+        {"name": "Brainiac", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Brainiac"},
+        {"name": "CinemeyesLens", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CinemeyesLens"},
+        {"name": "Code of Lies", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CodeOfLies"},
+        {"name": "Ctrl Alt Elite", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CtrlAltElite"},
+        {"name": "InsightOPS", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/InsightOPS"},
+        {"name": "PromptSaga", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/PromptSaga"},
+        {"name": "GameStorm", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Gamestorm"},  # Existing GameStorm button
+        {"name": "DPL", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/DPL"},
+        {"name": "Timescape", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Timescape"},
+        {"name": "TreasureTrove", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/TreasureTrove"},
+        {"name": "UXHunt", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/UXHunt"}
+    ]
 
-st.markdown(
-    """
-    <a href="https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Gamestorm"
-    style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">GameStorm</a>
-    """, unsafe_allow_html=True)
+    # Display event buttons with links in pairs
+    for i in range(0, len(event_pairs), 2):
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown(
+                f'<a href="{event_pairs[i]["link"]}" style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">{event_pairs[i]["name"]}</a>',
+                unsafe_allow_html=True
+            )
+        
+        with col2:
+            if i + 1 < len(event_pairs):
+                st.markdown(
+                    f'<a href="{event_pairs[i + 1]["link"]}" style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">{event_pairs[i + 1]["name"]}</a>',
+                    unsafe_allow_html=True
+                )
 
+# Display additional event buttons with links, including GameStorm
+display_event_buttons()
