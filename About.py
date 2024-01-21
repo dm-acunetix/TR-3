@@ -75,6 +75,6 @@ import streamlit as st
 st.markdown(
     """
     <a href="https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Gamestorm"
-    style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(153, 204, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">GameStorm</a>
+    style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">GameStorm</a>
     """, unsafe_allow_html=True)
 
