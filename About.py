@@ -102,7 +102,7 @@ def display_event_buttons():
         with col2:
             if i + 1 < len(event_pairs):
                 st.markdown(
-                    f'<a href="{event_pairs[i + 1]["link"]}" style="display: inline-block; background-color: rgba(51, 153, 255, 0.2); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">{event_pairs[i + 1]["name"]}</a>',
+                    f'<a href="{event_pairs[i + 1]["link"]}" style="display: inline-block; background-color: rgba(51, 153, 255, 0.3); color: rgba(204, 229, 225, 1.0); padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 9px; cursor: pointer;">{event_pairs[i + 1]["name"]}</a>',
                     unsafe_allow_html=True
                 )
 
