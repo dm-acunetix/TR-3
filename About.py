@@ -76,7 +76,7 @@ def display_event_buttons():
     
     # Define event pairs for mobile display
     event_pairs = [
-        {"name": "Brainiac", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Brainiac"},
+        {"name": "Brainiac", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Braniac"},
         {"name": "CinemeyesLens", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CinemeyesLens"},
         {"name": "Code of Lies", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CodeOfLies"},
         {"name": "Ctrl Alt Elite", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CtrlAltElite"},
