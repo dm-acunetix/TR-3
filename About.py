@@ -67,3 +67,11 @@ st.subheader("Ready to Register?")
 st.write("🚀 Secure your team's spot in the chronicles of Acunetix 11.0! Time waits for no one.")
 st.info('To register for team event access the sidebar using the button in the top left corner') 
 st.error("Team leader i.e. YOU need not register, only register your fellow teammates")
+
+import streamlit as st
+
+st.markdown(
+    """
+    <a href="https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Gamestorm"
+    style="display: inline-block; background-color: rgba(255, 255, 255, 0.3); border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; font-size: 16px; border-radius: 5px; cursor: pointer;">GameStorm</a>
+    """, unsafe_allow_html=True)
