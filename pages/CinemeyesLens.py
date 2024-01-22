@@ -42,21 +42,19 @@ if search_id:
 
             st.write(f"Event for ID {search_id}:")
             st.write(game_list)
-            
-            # st.info("Team should at least have 2 teammates")
-            with st.form("Team_Reg"):
-                teammate_info_list = []
 
-                for game in game_list:
-                    st.title(f"Teammates for: {game}")
+            if game_str == 'Photography':
+                st.error("Solo entries only for Photography")
+                gif_url = "https://i.ibb.co/nnQBz2x/SOLO.gif"  # Replace with your GIF URL
+                st.image(gif_url, caption="Embark on your solo adventure!", use_column_width=True)
+            else:
+                with st.form("Team_Reg"):
+                    teammate_info_list = []
 
-                    if game == 'Photography':
-                        st.error("Solo entries only for Photography")
-                        gif_url = "https://i.ibb.co/nnQBz2x/SOLO.gif"  # Replace with your GIF URL
-                        st.image(gif_url, caption="Embark on your solo adventure!", use_column_width=True)
-                        num = 0  # Set num to 0 for Photography
-                    else:
-                        num = 1
+                    for game in game_list:
+                        st.title(f"Teammates for: {game}")
+
+                        num = 1 if game == 'Reel' else 0  # Set num to 1 for Reel
 
                         teammate_names = []
                         teammate_numbers = []
