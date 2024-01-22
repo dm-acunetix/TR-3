@@ -57,7 +57,7 @@ if search_id:
                     #     num = 0  # Set num to 0 for Photography
                     # else:
                     st.info("Team should consist of at least 3 teammates")
-                    num = 4
+                    num = 1
 
                     teammate_names = []
                     teammate_numbers = []
