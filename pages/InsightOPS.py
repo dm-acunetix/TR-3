@@ -41,7 +41,7 @@ if search_id:
 
             st.write(f"Event for ID {search_id}:")
             st.write(game_list)
-            st.info("Team should at least have 2 teammates")
+            st.info("Team: Min 2, Max 3 members, with one as the leader.")
 
             with st.form("Team_Reg"):
                 teammate_info_list = []
