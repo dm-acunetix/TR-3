@@ -16,6 +16,9 @@ client = gspread.authorize(creds)
 sheet_er = client.open_by_key("1OmpeCBR4L5Z0f4MBEYJcklIevM9NPsE0VTXcGhYxsJw").worksheet("Event Reg")
 sheet_tr = client.open_by_key("1EnkWPqyIqCawvYHn35BrvlhLxekr9pGOM-GyFCGg0Ew").worksheet("Code of Lies")
 
+# Specify the column to search for IDs
+id_column = "J"
+
 st.title("Team Registration for Code of Lies")
 search_id = st.text_input("Enter your ID:")
 
@@ -29,7 +32,7 @@ if search_id:
         st.warning("Team already registered")
     else:
         # Check in sheet_er
-        cell_er = sheet_er.find(search_id)
+        cell_er = sheet_er.find(search_id, in_column=id_column)
 
         if cell_er:
             row_values = sheet_er.row_values(cell_er.row)
