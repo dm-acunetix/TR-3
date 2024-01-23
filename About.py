@@ -95,17 +95,17 @@ def display_event_buttons():
     
     # Define event pairs for mobile display
     event_pairs = [
-        {"name": "Brainiac", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Brainiac"},
-        {"name": "CinemeyesLens", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CinemeyesLens"},
-        {"name": "Code of Lies", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CodeOfLies"},
-        {"name": "Ctrl Alt Elite", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/CtrlAltElite"},
-        {"name": "InsightOPS", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/InsightOPS"},
-        {"name": "PromptSaga", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/PromptSaga"},
-        {"name": "GameStorm", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Gamestorm"},  # Existing GameStorm button
-        {"name": "DPL", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/DPL"},
-        {"name": "Timescape", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/Timescapes"},
-        {"name": "TreasureTrove", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/TresureTrove"},
-        {"name": "UXHunt", "link": "https://prasannagh963-tr-3-about-xt0zng.streamlit.app/UXHunt"}
+        {"name": "Brainiac", "link": "https://teamreg-beta-acunetix11.streamlit.app/Brainiac"},
+        {"name": "CinemeyesLens", "link": "https://teamreg-beta-acunetix11.streamlit.app/CinemeyesLens"},
+        {"name": "Code of Lies", "link": "https://teamreg-beta-acunetix11.streamlit.app/CodeOfLies"},
+        {"name": "Ctrl Alt Elite", "link": "https://teamreg-beta-acunetix11.streamlit.app/CtrlAltElite"},
+        {"name": "InsightOPS", "link": "https://teamreg-beta-acunetix11.streamlit.app/InsightOPS"},
+        {"name": "PromptSaga", "link": "https://teamreg-beta-acunetix11.streamlit.app/PromptSaga"},
+        {"name": "GameStorm", "link": "https://teamreg-beta-acunetix11.streamlit.app/Gamestorm"},  # Existing GameStorm button
+        {"name": "DPL", "link": "https://teamreg-beta-acunetix11.streamlit.app/DPL"},
+        {"name": "Timescape", "link": "https://teamreg-beta-acunetix11.streamlit.app/Timescapes"},
+        {"name": "TreasureTrove", "link": "https://teamreg-beta-acunetix11.streamlit.app/TresureTrove"},
+        {"name": "UXHunt", "link": "https://teamreg-beta-acunetix11.streamlit.app/UXHunt"}
     ]
 
     # Display event buttons with links in pairs
