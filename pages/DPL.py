@@ -14,7 +14,7 @@ client = gspread.authorize(creds)
 
 # Replace 'Sheet Name' with your actual sheet name
 sheet_er = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("Sheet8")
-sheet_tr = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("DPL TR")
+sheet_tr = client.open_by_key("1EnkWPqyIqCawvYHn35BrvlhLxekr9pGOM-GyFCGg0Ew").worksheet("DPL")
 
 st.title("Team Registration for DPL")
 search_id = st.text_input("Enter your ID:")
@@ -80,7 +80,7 @@ if search_id:
                 if submit_button:
                     df = pd.DataFrame(teammate_info_list)
                     print(teammate_info_list)
-                    w = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("DPL TR")
+                    w = client.open_by_key("1EnkWPqyIqCawvYHn35BrvlhLxekr9pGOM-GyFCGg0Ew").worksheet("DPL")
                     last = len(w.col_values(1)) + 1
                     set_with_dataframe(w, df, row=last, include_index=False, include_column_header=False)
                     st.success("Team Registered! ✨")
