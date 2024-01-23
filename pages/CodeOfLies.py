@@ -13,7 +13,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("litforms.json", scope)
 client = gspread.authorize(creds)
 
 # Replace 'Sheet Name' with your actual sheet name
-sheet_er = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("Sheet8")
+sheet_er = client.open_by_key("1OmpeCBR4L5Z0f4MBEYJcklIevM9NPsE0VTXcGhYxsJw").worksheet("Event Reg")
 sheet_tr = client.open_by_key("1EnkWPqyIqCawvYHn35BrvlhLxekr9pGOM-GyFCGg0Ew").worksheet("Code of Lies")
 
 st.title("Team Registration for Code of Lies")
