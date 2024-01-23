@@ -54,7 +54,7 @@ if search_id:
                     for game in game_list:
                         st.title(f"Teammates for: {game}")
 
-                        num = 1 if game == 'Reel' else 0  # Set num to 1 for Reel
+                        num = 0 if game == 'Reel' else 1  # Set num to 1 for Reel
 
                         teammate_names = []
                         teammate_numbers = []
