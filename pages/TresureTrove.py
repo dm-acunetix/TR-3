@@ -1,4 +1,5 @@
 import streamlit as st
+st.title("Team Registration for Treasure Trove")
 
 st.info("Registrations opening soon!!")
 # import gspread
@@ -18,7 +19,6 @@ st.info("Registrations opening soon!!")
 # sheet_er = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("Sheet8")
 # sheet_tr = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("TT TR")
 
-# st.title("Team Registration for Treasure Trove")
 # search_id = st.text_input("Enter your ID:")
 
 # if search_id:

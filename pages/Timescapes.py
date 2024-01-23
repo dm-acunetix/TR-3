@@ -44,7 +44,7 @@ if search_id:
             # st.info("Team should at least have 2 teammates")
 
             with st.form("Team_Reg"):
-                st.info("Team: Min 1, Max 2 members, with one as the leader.")
+                st.info("Team: Min 1, Max 4 members, with one as the leader.")
 
                 teammate_info_list = []
                 for game in game_list:
@@ -81,7 +81,7 @@ if search_id:
                 if submit_button:
                     df = pd.DataFrame(teammate_info_list)
                     print(teammate_info_list)
-                    w = client.open_by_key("1VeWt6NBUGqc_4TldxqFfrw9qWhd_4n_FKM0H0XEvoLw").worksheet("TS TR")
+                    w = client.open_by_key("1RAmLhTP0Ea0B-WASvwIkVh7ENQjZSo_tzDdlzulhh3Q").worksheet("Timescape")
                     last = len(w.col_values(1)) + 1
                     set_with_dataframe(w, df, row=last, include_index=False, include_column_header=False)
                     st.success("Team Registered! ✨")
