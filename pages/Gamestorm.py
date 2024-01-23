@@ -51,6 +51,8 @@ if search_id:
                     st.title(f"Teammates for : {game}")
 
                     if game in ["BGMI", "FreeFire"]:
+                        st.info("Team: Min 1, Max 4 members, with one as the leader.")
+
                         num = 3  # Default number of teammates for BGMI and FreeFire
                     else:
                         st.info("Fill all 4 teammates details")

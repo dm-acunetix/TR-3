@@ -43,6 +43,8 @@ if search_id:
             st.write(game_list)
 
             with st.form("Team_Reg"):
+                st.info("Team: Min 1, Max 2 members, with one as the leader.")
+
                 teammate_info_list = []
                 for game in game_list:
                     st.title(f"Teammates for : {game}")

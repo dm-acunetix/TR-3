@@ -56,7 +56,7 @@ if search_id:
                     #     st.image(gif_url, caption="Embark on your solo adventure!", use_column_width=True)
                     #     num = 0  # Set num to 0 for Photography
                     # else:
-                    st.info("Team should consist of at least 3 teammates")
+                    st.info("Team: Min 1, Max 2 members, with one as the leader.")
                     num = 1
 
                     teammate_names = []
